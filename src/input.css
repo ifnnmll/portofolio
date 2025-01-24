@@ -60,5 +60,7 @@ body {
     animation: slide-reverse 0.5s ease-in-out forwards;
   }
     
-
+  html {
+    scroll-behavior: smooth;
+  }
   
