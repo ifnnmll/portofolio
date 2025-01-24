@@ -29,5 +29,36 @@ body {
     @apply  -rotate-45;
 }
 
+ /* Animasi garis bergerak dari kiri ke kanan */
+ @keyframes slide {
+    0% {
+      width: 0;
+      transform-origin: left;
+    }
+    100% {
+      width: 100%;
+    }
+  }
 
+  /* Animasi garis menutup dari kanan ke kiri */
+  @keyframes slide-reverse {
+    0% {
+      width: 100%;
+      transform-origin: right;
+    }
+    100% {
+      width: 0;
+    }
+  }
+
+  /* Tambahkan kelas kustom untuk Tailwind */
+  .animate-slide {
+    animation: slide 0.5s ease-in-out forwards;
+  }
+
+  .animate-slide-reverse {
+    animation: slide-reverse 0.5s ease-in-out forwards;
+  }
     
+
+  
