@@ -6,8 +6,6 @@
     <title>MIM</title>
     <link rel="icon" href="/dist/img/project/Mim.png" type="image/png" />
     <link href="dist/output.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="/dist/js/animation.js"></script>
   </head>
   <body>
     <!-- Header start -->
@@ -61,48 +59,50 @@
     <!-- Header End -->
 
     <!-- Section Start -->
-<section id="home" class="pt-36">
-  <div class="container">
-    <div class="flex flex-wrap">
-      <div class="w-full self-center px-2 lg:w-1/2">
-        <div class="w-full h-full flex self-center">
-          <h1 id="typewriter" class="font-bold text-2xl lg:text-5xl opacity-0 translate-y-10"></h1>
+    <section id="home" class="pt-36">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-2 lg:w-1/2">
+            <div class="w-full h-full flex self-center">
+              <h1 id="typewriter"
+                class="font-bold text-2xl lg:text-5xl opacity-0 translate-y-10"></h1>
+            </div>
+            <h2 id="role"
+              class="font-medium text-lg text-slate-600 lg:text-2xl opacity-0 translate-y-10">
+              Web Developer
+            </h2>
+            <p id="description"
+              class="font-medium mb-10 text-slate-600 opacity-0 translate-y-10">
+              Menjadi Progremer Adalah Impian Saya Sejak Masih Di Bangku SMP
+            </p>
+            <a id="contact-button"
+              href="#contact"
+              class="text-base font-semibold text-white bg-blue-500 py-3 px-8 rounded-md hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out opacity-0 translate-y-10">
+              Hubungi Saya
+            </a>
+          </div>
+          <div class="w-full self-end px-6 lg:w-1/2">
+            <div class="relative mt-10 lg:mt-9 lg:right-0">
+              <img id="profile-image"
+                src="dist/img/pan.png"
+                alt="Muhammad Irfan Maulana"
+                class="max-w-full mx-auto opacity-0 scale-90" />
+              <span
+                id="background-shape"
+                class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-100 opacity-0 scale-90">
+                <svg width="400" height="350" viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#14b8a6"
+                    d="M29.5,-55.1C40.3,-44.8,52.5,-41.1,62.3,-33C72.1,-24.9,79.5,-12.5,82.8,1.9C86.2,16.3,85.5,32.6,77.8,44.5C70.2,56.3,55.6,63.7,41.5,64.2C27.3,64.8,13.7,58.6,-0.6,59.6C-14.8,60.5,-29.6,68.7,-41.1,66.6C-52.5,64.5,-60.7,52.1,-65.6,39.3C-70.6,26.5,-72.3,13.2,-69.4,1.7C-66.5,-9.9,-58.9,-19.8,-54.9,-34.1C-50.8,-48.5,-50.3,-67.4,-41.7,-78.9C-33.2,-90.5,-16.6,-94.7,-3.6,-88.4C9.3,-82.1,18.7,-65.3,29.5,-55.1Z"
+                    transform="translate(100 100) scale(1.0)" />
+                </svg>
+              </span>
+            </div>
+          </div>
         </div>
-        <h2 id="role" class="font-medium text-lg text-slate-600 lg:text-2xl opacity-0 translate-y-10">
-          Web Developer
-        </h2>
-        <p id="description" class="font-medium mb-10 text-slate-600 opacity-0 translate-y-10">
-          Menjadi Progremer Adalah Impian Saya Sejak Masih Di Bangku SMP
-        </p>
-        <a id="contact-button"
-          href="#contact"
-          class="text-base font-semibold text-white bg-blue-500 py-3 px-8 rounded-md hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out opacity-0 translate-y-10">
-          Hubungi Saya
-        </a>
       </div>
-      <div class="w-full self-end px-6 lg:w-1/2">
-        <div class="relative mt-10 lg:mt-9 lg:right-0">
-          <img id="profile-image"
-            src="dist/img/pan.png"
-            alt="Muhammad Irfan Maulana"
-            class="max-w-full mx-auto opacity-0 scale-90" />
-          <span
-            id="background-shape"
-            class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-100 opacity-0 scale-90">
-            <svg width="400" height="350" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-              <path fill="#14b8a6"
-                d="M29.5,-55.1C40.3,-44.8,52.5,-41.1,62.3,-33C72.1,-24.9,79.5,-12.5,82.8,1.9C86.2,16.3,85.5,32.6,77.8,44.5C70.2,56.3,55.6,63.7,41.5,64.2C27.3,64.8,13.7,58.6,-0.6,59.6C-14.8,60.5,-29.6,68.7,-41.1,66.6C-52.5,64.5,-60.7,52.1,-65.6,39.3C-70.6,26.5,-72.3,13.2,-69.4,1.7C-66.5,-9.9,-58.9,-19.8,-54.9,-34.1C-50.8,-48.5,-50.3,-67.4,-41.7,-78.9C-33.2,-90.5,-16.6,-94.7,-3.6,-88.4C9.3,-82.1,18.7,-65.3,29.5,-55.1Z"
-                transform="translate(100 100) scale(1.0)" />
-            </svg>
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Section End -->
-
-
+    </section>
+    <!-- Section End -->
 
     <!-- Header start -->
     <header
@@ -179,13 +179,13 @@
             Namun, saya selalu berusaha untuk belajar sehingga dapat memahami
             alur pemrograman dan terus berkembang.
           </p>
-            <!-- Tombol Download CV -->
-  <a 
-  href="https://drive.google.com/file/d/1mbXVnOeFO2g6youDlDChKae6RyHxhMT2/view?usp=sharing"
-  download="https://drive.google.com/file/d/1mbXVnOeFO2g6youDlDChKae6RyHxhMT2/view?usp=sharing" 
-  class="mt-6 inline-block px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg text-white font-medium relative">
-  Download CV
-</a>
+          <!-- Tombol Download CV -->
+          <a
+            href="https://drive.google.com/file/d/1mbXVnOeFO2g6youDlDChKae6RyHxhMT2/view?usp=sharing"
+            download="https://drive.google.com/file/d/1mbXVnOeFO2g6youDlDChKae6RyHxhMT2/view?usp=sharing"
+            class="mt-6 inline-block px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg text-white font-medium relative">
+            Download CV
+          </a>
         </div>
       </div>
 
@@ -307,107 +307,98 @@
     </section>
     <!-- Skills End -->
 
-<section id="experience" class="bg-gradient-to-b to-[#0B1120] from-[#1A2332] py-12">
-  <div class="container mx-auto px-6">
-    <div class="text-center mb-10">
-      <h2 class="text-5xl font-bold text-blue-500 uppercase mt-10">Experience</h2>
-    </div>
-
-    <div class="flex justify-center flex-wrap gap-4 mb-8">
-      <button onclick="switchTab('experience')" id="btn-experience"
-        class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 focus:ring focus:ring-blue-300">
-        Pengalaman
-      </button>
-      <button onclick="switchTab('education')" id="btn-education"
-        class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 focus:ring focus:ring-blue-300">
-        Education
-      </button>
-      <button onclick="switchTab('competition')" id="btn-competition"
-        class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 focus:ring focus:ring-blue-300">
-        Kompetisi
-      </button>
-    </div>
-
-    <div id="experience-section" class="block text-center mb-10">
-      <h3 class="text-xl font-bold text-blue-500 mb-4 uppercase">Pengalaman</h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-[#1A2332] p-6 rounded-lg shadow-md">
-          <p class="text-sm text-gray-400 mb-2">September 2024 - November 2024</p>
-          <h4 class="text-lg font-semibold text-white mb-2">Teknomadya</h4>
-          <p class="text-gray-400">Web Developer</p>
+    <section id="experience"
+      class="bg-gradient-to-b to-[#0B1120] from-[#1A2332] py-12">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-10">
+          <h2
+            class="text-5xl font-bold text-blue-500 uppercase mt-10">Experience</h2>
         </div>
-        <div class="bg-[#1A2332] p-6 rounded-lg shadow-md">
-          <p class="text-sm text-gray-400 mb-2">Januari 2025 - Maret 2025</p>
-          <h4 class="text-lg font-semibold text-white mb-2">Haekal Inti Pratama</h4>
-          <p class="text-gray-400">Web Developer</p>
+
+        <div class="flex justify-center flex-wrap gap-4 mb-8">
+          <button onclick="switchTab('experience')" id="btn-experience"
+            class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 focus:ring focus:ring-blue-300">
+            Pengalaman
+          </button>
+          <button onclick="switchTab('education')" id="btn-education"
+            class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 focus:ring focus:ring-blue-300">
+            Education
+          </button>
+          <button onclick="switchTab('competition')" id="btn-competition"
+            class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 focus:ring focus:ring-blue-300">
+            Kompetisi
+          </button>
+        </div>
+
+        <div id="experience-section" class="block text-center mb-10">
+          <h3
+            class="text-xl font-bold text-blue-500 mb-4 uppercase">Pengalaman</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-[#1A2332] p-6 rounded-lg shadow-md">
+              <p class="text-sm text-gray-400 mb-2">September 2024 - November
+                2024</p>
+              <h4 class="text-lg font-semibold text-white mb-2">Teknomadya</h4>
+              <p class="text-gray-400">Web Developer</p>
+            </div>
+            <div class="bg-[#1A2332] p-6 rounded-lg shadow-md">
+              <p class="text-sm text-gray-400 mb-2">Januari 2025 - Maret
+                2025</p>
+              <h4 class="text-lg font-semibold text-white mb-2">Haekal Inti
+                Pratama</h4>
+              <p class="text-gray-400">Web Developer</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="education-section" class="hidden text-center mb-10">
+          <h3
+            class="text-xl font-bold text-blue-500 mb-4 uppercase">Education</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-[#1A2332] p-6 rounded-lg shadow-md">
+              <p class="text-sm text-gray-400 mb-2">2013 - 2019</p>
+              <h4 class="text-lg font-semibold text-white mb-2">SDN CBS 04</h4>
+            </div>
+            <div class="bg-[#1A2332] p-6 rounded-lg shadow-md">
+              <p class="text-sm text-gray-400 mb-2">2019 - 2022</p>
+              <h4 class="text-lg font-semibold text-white mb-2">SMPN 243
+                Jakarta</h4>
+            </div>
+            <div class="bg-[#1A2332] p-6 rounded-lg shadow-md">
+              <p class="text-sm text-gray-400 mb-2">2022 - 2025</p>
+              <h4 class="text-lg font-semibold text-white mb-2">SMKN 46
+                Jakarta</h4>
+              <p class="text-gray-400">Rekayasa Perangkat Lunak</p>
+            </div>
+            <div class="bg-[#1A2332] p-6 rounded-lg shadow-md">
+              <p class="text-sm text-gray-400 mb-2">2025 - 2029</p>
+              <h4 class="text-lg font-semibold text-white mb-2">Institut
+                Pertanian Bogor</h4>
+              <p class="text-gray-400">Informatics Engineering</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="competition-section" class="hidden text-center mb-10">
+          <h3
+            class="text-xl font-bold text-blue-500 mb-4 uppercase">Kompetisi</h3>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
+            <div class="bg-[#1A2332] p-6 rounded-lg shadow-md">
+              <p class="text-sm text-gray-400 mb-2">26 Agustus - 30 Agustus 2024
+              </p>
+              <h4 class="text-lg font-semibold text-white mb-2">AWS Nasional
+                2024</h4>
+              <p class="text-gray-400 mb-4">Granfinalist - lomba website statis
+                AWS 2024</p>
+              <img src="/dist/img/SAVELIFE - SMK N 46 JAKARTA.jpg"
+                alt="Sertifikat Hackathon" class="rounded-lg shadow-md">
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div id="education-section" class="hidden text-center mb-10">
-      <h3 class="text-xl font-bold text-blue-500 mb-4 uppercase">Education</h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-[#1A2332] p-6 rounded-lg shadow-md">
-          <p class="text-sm text-gray-400 mb-2">2013 - 2019</p>
-          <h4 class="text-lg font-semibold text-white mb-2">SDN CBS 04</h4>
-        </div>
-        <div class="bg-[#1A2332] p-6 rounded-lg shadow-md">
-          <p class="text-sm text-gray-400 mb-2">2019 - 2022</p>
-          <h4 class="text-lg font-semibold text-white mb-2">SMPN 243 Jakarta</h4>
-        </div>
-        <div class="bg-[#1A2332] p-6 rounded-lg shadow-md">
-          <p class="text-sm text-gray-400 mb-2">2022 - 2025</p>
-          <h4 class="text-lg font-semibold text-white mb-2">SMKN 46 Jakarta</h4>
-          <p class="text-gray-400">Rekayasa Perangkat Lunak</p>
-        </div>
-        <div class="bg-[#1A2332] p-6 rounded-lg shadow-md">
-          <p class="text-sm text-gray-400 mb-2">2025 - 2029</p>
-          <h4 class="text-lg font-semibold text-white mb-2">Institut Pertanian Bogor</h4>
-          <p class="text-gray-400">Informatics Engineering</p>
-        </div>
-      </div>
-    </div>
-
-    <div id="competition-section" class="hidden text-center mb-10">
-      <h3 class="text-xl font-bold text-blue-500 mb-4 uppercase">Kompetisi</h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
-        <div class="bg-[#1A2332] p-6 rounded-lg shadow-md">
-          <p class="text-sm text-gray-400 mb-2">26 Agustus - 30 Agustus 2024 </p>
-          <h4 class="text-lg font-semibold text-white mb-2">AWS Nasional 2024</h4>
-          <p class="text-gray-400 mb-4">Granfinalist - lomba website statis AWS 2024</p>
-          <img src="/dist/img/SAVELIFE - SMK N 46 JAKARTA.jpg" alt="Sertifikat Hackathon" class="rounded-lg shadow-md">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Experience Section End -->
-
-<script>
-  function switchTab(tab) {
-    const sections = ["experience", "education", "competition"];
-    
-    sections.forEach(section => {
-      document.getElementById(section + "-section").classList.add("hidden");
-      document.getElementById("btn-" + section).classList.remove("bg-blue-600");
-      document.getElementById("btn-" + section).classList.add("bg-blue-500");
-    });
-
-    document.getElementById(tab + "-section").classList.remove("hidden");
-    document.getElementById("btn-" + tab).classList.add("bg-blue-600");
-    document.getElementById("btn-" + tab).classList.remove("bg-blue-500");
-
-    const element = document.getElementById(tab + "-section");
-    window.scrollTo({
-      top: element.offsetTop - 100,
-      behavior: "smooth"
-    });
-  }
-
-  window.onload = function () {
-    switchTab('experience');
-  };
-</script>
+    </section>
+    <!-- Experience Section End -->
+     
 
 
     <!-- Section Project -->
@@ -431,105 +422,108 @@
           <div id="projects-container"
             class="grid grid-cols-1 gap-8 md:grid-cols-3">
             <!-- Project 1 -->
-            <div class="mb-12 bg-gradient-to-b from-[#00172a] to-[#002a3d] rounded-lg shadow-lg project-item">
+            <div
+              class="mb-12 bg-gradient-to-b from-[#00172a] to-[#002a3d] rounded-lg shadow-lg project-item">
               <div class="rounded-t-md shadow-md overflow-hidden">
-                <img src="dist/img/project/Perpusproject.png" alt="Landing Page" class="w-full object-cover" />
+                <img src="dist/img/project/Perpusproject.png" alt="Landing Page"
+                  class="w-full object-cover" />
               </div>
               <div class="p-4">
-                <h3 class="font-semibold text-xl text-white mt-5 mb-3">Perpustakaan</h3>
-                <p class="font-medium text-sm text-gray-300 leading-tight text-justify">
-                  Website Perpustakaan 46 adalah platform perpustakaan digital yang menyediakan akses ke berbagai buku, 
+                <h3
+                  class="font-semibold text-xl text-white mt-5 mb-3">Perpustakaan</h3>
+                <p
+                  class="font-medium text-sm text-gray-300 leading-tight text-justify">
+                  Website Perpustakaan 46 adalah platform perpustakaan digital
+                  yang menyediakan akses ke berbagai buku,
                   termasuk buku pelajaran dan bacaan hiburan.
                 </p>
                 <div class="flex gap-4 mt-6">
-                  <a href="https://peprustakaan-46.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  <a href="https://peprustakaan-46.vercel.app/" target="_blank"
+                    rel="noopener noreferrer"
                     class="flex items-center gap-2 text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out">
                     View Project
                   </a>
                   <!-- Tombol GitHub dengan ikon GitHub -->
-                  <a href="https://github.com/ifnnmll/Peprustakaan-46" target="_blank" rel="noopener noreferrer"
+                  <a href="https://github.com/ifnnmll/Peprustakaan-46"
+                    target="_blank" rel="noopener noreferrer"
                     class="flex items-center gap-2 text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out">
                     GitHub
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
-                      <path fill-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.206 11.385.6.11.82-.26.82-.577v-2.254c-3.34.724-4.043-1.61-4.043-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.082-.73.082-.73 1.206.085 1.84 1.238 1.84 1.238 1.07 1.832 2.806 1.303 3.49.996.108-.775.42-1.303.763-1.603-2.665-.3-5.466-1.333-5.466-5.933 0-1.313.468-2.386 1.237-3.225-.124-.303-.536-1.523.118-3.176 0 0 1.01-.323 3.312 1.23a11.54 11.54 0 013.018-.404c1.024.004 2.056.137 3.018.404 2.302-1.553 3.31-1.23 3.31-1.23.656 1.653.244 2.873.12 3.176.77.84 1.236 1.912 1.236 3.225 0 4.61-2.804 5.63-5.476 5.926.43.37.814 1.1.814 2.22v3.293c0 .32.218.693.824.577C20.565 21.796 24 17.295 24 12c0-6.63-5.37-12-12-12z" clip-rule="evenodd"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                      viewBox="0 0 24 24" class="w-5 h-5">
+                      <path fill-rule="evenodd"
+                        d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.206 11.385.6.11.82-.26.82-.577v-2.254c-3.34.724-4.043-1.61-4.043-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.082-.73.082-.73 1.206.085 1.84 1.238 1.84 1.238 1.07 1.832 2.806 1.303 3.49.996.108-.775.42-1.303.763-1.603-2.665-.3-5.466-1.333-5.466-5.933 0-1.313.468-2.386 1.237-3.225-.124-.303-.536-1.523.118-3.176 0 0 1.01-.323 3.312 1.23a11.54 11.54 0 013.018-.404c1.024.004 2.056.137 3.018.404 2.302-1.553 3.31-1.23 3.31-1.23.656 1.653.244 2.873.12 3.176.77.84 1.236 1.912 1.236 3.225 0 4.61-2.804 5.63-5.476 5.926.43.37.814 1.1.814 2.22v3.293c0 .32.218.693.824.577C20.565 21.796 24 17.295 24 12c0-6.63-5.37-12-12-12z"
+                        clip-rule="evenodd" />
                     </svg>
                   </a>
                 </div>
               </div>
             </div>
 
-               <div class="mb-12 bg-gradient-to-b from-[#00172a] to-[#002a3d] rounded-lg shadow-lg project-item">
-                <div class="rounded-t-md shadow-md overflow-hidden">
-                  <img src="dist/img/project/Hotelinproject.png" alt="Landing Page" class="w-full object-cover" />
-                </div>
-                <div class="p-4">
-                  <h3 class="font-semibold text-xl text-white mt-5 mb-3">Hotelin</h3>
-                  <p class="font-medium text-sm text-gray-300 leading-tight text-justify">
-                    HotelIn adalah platform web untuk mencari dan memesan hotel, dengan pilihan kamar yang bervariasi, mulai dari ekonomis hingga mewah. Situs ini menawarkan fitur pencarian berdasarkan lokasi dan kategori hotel.
-                  </p>
-                  <div class="flex gap-4 mt-6">
-                    <!-- Tombol View Project dengan ikon panah ke kanan -->
-                    <a href="https://ramarfx.github.io/HotelIn/" target="_blank" rel="noopener noreferrer"
-                      class="flex items-center gap-2 text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out">
-                      View Project
-                    </a>
-                    <a href="https:https://github.com/ramarfx/HotelIn" target="_blank" rel="noopener noreferrer"
-                      class="flex items-center gap-2 text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out">
-                      GitHub
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
-                        <path fill-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.206 11.385.6.11.82-.26.82-.577v-2.254c-3.34.724-4.043-1.61-4.043-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.082-.73.082-.73 1.206.085 1.84 1.238 1.84 1.238 1.07 1.832 2.806 1.303 3.49.996.108-.775.42-1.303.763-1.603-2.665-.3-5.466-1.333-5.466-5.933 0-1.313.468-2.386 1.237-3.225-.124-.303-.536-1.523.118-3.176 0 0 1.01-.323 3.312 1.23a11.54 11.54 0 013.018-.404c1.024.004 2.056.137 3.018.404 2.302-1.553 3.31-1.23 3.31-1.23.656 1.653.244 2.873.12 3.176.77.84 1.236 1.912 1.236 3.225 0 4.61-2.804 5.63-5.476 5.926.43.37.814 1.1.814 2.22v3.293c0 .32.218.693.824.577C20.565 21.796 24 17.295 24 12c0-6.63-5.37-12-12-12z" clip-rule="evenodd"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            
-            <div class="mb-12 bg-gradient-to-b from-[#00172a] to-[#002a3d] rounded-lg shadow-lg project-item">
+            <div
+              class="mb-12 bg-gradient-to-b from-[#00172a] to-[#002a3d] rounded-lg shadow-lg project-item">
               <div class="rounded-t-md shadow-md overflow-hidden">
-                <img src="dist/img/project/ruzeloproject.png" alt="Landing Page" class="w-full object-cover" />
+                <img src="dist/img/project/Hotelinproject.png"
+                  alt="Landing Page" class="w-full object-cover" />
               </div>
               <div class="p-4">
-                <h3 class="font-semibold text-xl text-white mt-5 mb-3">Ruzelo</h3>
-                <p class="font-medium text-sm text-gray-300 leading-tight text-justify">
+                <h3
+                  class="font-semibold text-xl text-white mt-5 mb-3">Hotelin</h3>
+                <p
+                  class="font-medium text-sm text-gray-300 leading-tight text-justify">
+                  HotelIn adalah platform web untuk mencari dan memesan hotel,
+                  dengan pilihan kamar yang bervariasi, mulai dari ekonomis
+                  hingga mewah. Situs ini menawarkan fitur pencarian berdasarkan
+                  lokasi dan kategori hotel.
+                </p>
+                <div class="flex gap-4 mt-6">
+                  <!-- Tombol View Project dengan ikon panah ke kanan -->
+                  <a href="https://ramarfx.github.io/HotelIn/" target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center gap-2 text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out">
+                    View Project
+                  </a>
+                  <a href="https:https://github.com/ramarfx/HotelIn"
+                    target="_blank" rel="noopener noreferrer"
+                    class="flex items-center gap-2 text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out">
+                    GitHub
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                      viewBox="0 0 24 24" class="w-5 h-5">
+                      <path fill-rule="evenodd"
+                        d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.206 11.385.6.11.82-.26.82-.577v-2.254c-3.34.724-4.043-1.61-4.043-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.082-.73.082-.73 1.206.085 1.84 1.238 1.84 1.238 1.07 1.832 2.806 1.303 3.49.996.108-.775.42-1.303.763-1.603-2.665-.3-5.466-1.333-5.466-5.933 0-1.313.468-2.386 1.237-3.225-.124-.303-.536-1.523.118-3.176 0 0 1.01-.323 3.312 1.23a11.54 11.54 0 013.018-.404c1.024.004 2.056.137 3.018.404 2.302-1.553 3.31-1.23 3.31-1.23.656 1.653.244 2.873.12 3.176.77.84 1.236 1.912 1.236 3.225 0 4.61-2.804 5.63-5.476 5.926.43.37.814 1.1.814 2.22v3.293c0 .32.218.693.824.577C20.565 21.796 24 17.295 24 12c0-6.63-5.37-12-12-12z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="mb-12 bg-gradient-to-b from-[#00172a] to-[#002a3d] rounded-lg shadow-lg project-item">
+              <div class="rounded-t-md shadow-md overflow-hidden">
+                <img src="dist/img/project/ruzeloproject.png" alt="Landing Page"
+                  class="w-full object-cover" />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="font-semibold text-xl text-white mt-5 mb-3">Ruzelo</h3>
+                <p
+                  class="font-medium text-sm text-gray-300 leading-tight text-justify">
                   Ruzelo adalah platform penyedia solusi rumah yang
                   mengintegrasikan teknologi modern seperti sistem energi surya,
                   lift rumah, dan perangkat Internet of Things (IoT) pintar.
                 </p>
                 <div class="flex gap-4 mt-6">
-                  <a href="https://peprustakaan-46.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  <a href="https://peprustakaan-46.vercel.app/" target="_blank"
+                    rel="noopener noreferrer"
                     class="flex items-center gap-2 text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out">
                     View Project
                   </a>
-                  <a href="https://github.com/ifnnmll/Peprustakaan-46" target="_blank" rel="noopener noreferrer"
+                  <a href="https://github.com/ifnnmll/Peprustakaan-46"
+                    target="_blank" rel="noopener noreferrer"
                     class="flex items-center gap-2 text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out">
                     GitHub
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
-                      <path fill-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.206 11.385.6.11.82-.26.82-.577v-2.254c-3.34.724-4.043-1.61-4.043-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.082-.73.082-.73 1.206.085 1.84 1.238 1.84 1.238 1.07 1.832 2.806 1.303 3.49.996.108-.775.42-1.303.763-1.603-2.665-.3-5.466-1.333-5.466-5.933 0-1.313.468-2.386 1.237-3.225-.124-.303-.536-1.523.118-3.176 0 0 1.01-.323 3.312 1.23a11.54 11.54 0 013.018-.404c1.024.004 2.056.137 3.018.404 2.302-1.553 3.31-1.23 3.31-1.23.656 1.653.244 2.873.12 3.176.77.84 1.236 1.912 1.236 3.225 0 4.61-2.804 5.63-5.476 5.926.43.37.814 1.1.814 2.22v3.293c0 .32.218.693.824.577C20.565 21.796 24 17.295 24 12c0-6.63-5.37-12-12-12z" clip-rule="evenodd"/>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-            
-
-            <div class="hidden mb-12 bg-gradient-to-b from-[#00172a] to-[#002a3d] rounded-lg shadow-lg project-item">
-              <div class="rounded-t-md shadow-md overflow-hidden">
-                <img src="dist/img/project/safeliveproject.png" alt="Project" class="w-full object-cover" />
-              </div>
-              <div class="p-4">
-                <h3 class="font-semibold text-xl text-white mt-5 mb-3">SaveLife</h3>
-                <p class="font-medium text-sm text-gray-300 leading-tight text-justify">
-                  SaveLife adalah platform yang berkomitmen untuk meningkatkan kesadaran dan pengetahuan tentang pentingnya kesehatan fisik, mental, imunisasi, lingkungan, dan gizi seimbang.
-                </p>
-                <div class="flex gap-4 mt-6">
-                  <a href="https://safelife-lovat.vercel.app/" target="_blank" rel="noopener noreferrer"
-                    class="text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out">
-                    View Project
-                  </a>
-                  <a href="https://github.com/ifnnmll/web-sagasitas" target="_blank" rel="noopener noreferrer"
-                    class="text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out flex items-center gap-2">
-                    GitHub
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                      viewBox="0 0 24 24" class="w-5 h-5">
                       <path fill-rule="evenodd"
                         d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.206 11.385.6.11.82-.26.82-.577v-2.254c-3.34.724-4.043-1.61-4.043-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.082-.73.082-.73 1.206.085 1.84 1.238 1.84 1.238 1.07 1.832 2.806 1.303 3.49.996.108-.775.42-1.303.763-1.603-2.665-.3-5.466-1.333-5.466-5.933 0-1.313.468-2.386 1.237-3.225-.124-.303-.536-1.523.118-3.176 0 0 1.01-.323 3.312 1.23a11.54 11.54 0 013.018-.404c1.024.004 2.056.137 3.018.404 2.302-1.553 3.31-1.23 3.31-1.23.656 1.653.244 2.873.12 3.176.77.84 1.236 1.912 1.236 3.225 0 4.61-2.804 5.63-5.476 5.926.43.37.814 1.1.814 2.22v3.293c0 .32.218.693.824.577C20.565 21.796 24 17.295 24 12c0-6.63-5.37-12-12-12z"
                         clip-rule="evenodd" />
@@ -538,25 +532,34 @@
                 </div>
               </div>
             </div>
-            
-            <div class="hidden mb-12 bg-gradient-to-b from-[#00172a] to-[#002a3d] rounded-lg shadow-lg project-item">
+
+            <div
+              class="hidden mb-12 bg-gradient-to-b from-[#00172a] to-[#002a3d] rounded-lg shadow-lg project-item">
               <div class="rounded-t-md shadow-md overflow-hidden">
-                <img src="dist/img/project/PanFoodieproject.png" alt="Project" class="w-full object-cover" />
+                <img src="dist/img/project/safeliveproject.png" alt="Project"
+                  class="w-full object-cover" />
               </div>
               <div class="p-4">
-                <h3 class="font-semibold text-xl text-white mt-5 mb-3">PanFoodie</h3>
-                <p class="font-medium text-sm text-gray-300 leading-tight text-justify">
-                  PanFoodie adalah web kasir modern untuk penjualan makanan dan minuman dengan sistem pembayaran online yang cepat dan aman. Dengan tampilan simpel dan responsif, memudahkan transaksi serta manajemen penjualan secara efisien.
+                <h3
+                  class="font-semibold text-xl text-white mt-5 mb-3">SaveLife</h3>
+                <p
+                  class="font-medium text-sm text-gray-300 leading-tight text-justify">
+                  SaveLife adalah platform yang berkomitmen untuk meningkatkan
+                  kesadaran dan pengetahuan tentang pentingnya kesehatan fisik,
+                  mental, imunisasi, lingkungan, dan gizi seimbang.
                 </p>
                 <div class="flex gap-4 mt-6">
-                  <a href="http://localhost:5173/" target="_blank" rel="noopener noreferrer"
+                  <a href="https://safelife-lovat.vercel.app/" target="_blank"
+                    rel="noopener noreferrer"
                     class="text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out">
                     View Project
                   </a>
-                  <a href="https://github.com/ifnnmll/kasirapp" target="_blank" rel="noopener noreferrer"
+                  <a href="https://github.com/ifnnmll/web-sagasitas"
+                    target="_blank" rel="noopener noreferrer"
                     class="text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out flex items-center gap-2">
                     GitHub
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                      viewBox="0 0 24 24" class="w-5 h-5">
                       <path fill-rule="evenodd"
                         d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.206 11.385.6.11.82-.26.82-.577v-2.254c-3.34.724-4.043-1.61-4.043-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.082-.73.082-.73 1.206.085 1.84 1.238 1.84 1.238 1.07 1.832 2.806 1.303 3.49.996.108-.775.42-1.303.763-1.603-2.665-.3-5.466-1.333-5.466-5.933 0-1.313.468-2.386 1.237-3.225-.124-.303-.536-1.523.118-3.176 0 0 1.01-.323 3.312 1.23a11.54 11.54 0 013.018-.404c1.024.004 2.056.137 3.018.404 2.302-1.553 3.31-1.23 3.31-1.23.656 1.653.244 2.873.12 3.176.77.84 1.236 1.912 1.236 3.225 0 4.61-2.804 5.63-5.476 5.926.43.37.814 1.1.814 2.22v3.293c0 .32.218.693.824.577C20.565 21.796 24 17.295 24 12c0-6.63-5.37-12-12-12z"
                         clip-rule="evenodd" />
@@ -565,33 +568,72 @@
                 </div>
               </div>
             </div>
-            
 
-          <div
-          class="hidden mb-12 bg-gradient-to-b from-[#00172a] to-[#002a3d] rounded-lg shadow-lg project-item">
-          <div class="rounded-t-md shadow-md overflow-hidden">
-            <img src="dist/img/project/newproject3.png" alt="Project" class="w-full object-cover" />
-          </div>
-          <div class="p-4">
-            <h3 class="font-semibold text-xl text-white mt-5 mb-3">New Project 3</h3>
-            <p class="font-medium text-sm text-gray-300 leading-tight text-justify">
-              Description for new project 3 goes here.
-            </p>
-            <div class="flex gap-4 mt-6">
-              <a href="https://ramarfx.github.io/HotelIn/" target="_blank"
-                rel="noopener noreferrer"
-                class="text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out">
-                View Project
-              </a>
-              <a href="https://github.com/ramarfx/HotelIn" target="_blank"
-                rel="noopener noreferrer"
-                class="text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out">
-                GitHub
-              </a>
+            <div
+              class="hidden mb-12 bg-gradient-to-b from-[#00172a] to-[#002a3d] rounded-lg shadow-lg project-item">
+              <div class="rounded-t-md shadow-md overflow-hidden">
+                <img src="dist/img/project/PanFoodieproject.png" alt="Project"
+                  class="w-full object-cover" />
+              </div>
+              <div class="p-4">
+                <h3
+                  class="font-semibold text-xl text-white mt-5 mb-3">PanFoodie</h3>
+                <p
+                  class="font-medium text-sm text-gray-300 leading-tight text-justify">
+                  PanFoodie adalah web kasir modern untuk penjualan makanan dan
+                  minuman dengan sistem pembayaran online yang cepat dan aman.
+                  Dengan tampilan simpel dan responsif, memudahkan transaksi
+                  serta manajemen penjualan secara efisien.
+                </p>
+                <div class="flex gap-4 mt-6">
+                  <a href="http://localhost:5173/" target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out">
+                    View Project
+                  </a>
+                  <a href="https://github.com/ifnnmll/kasirapp" target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out flex items-center gap-2">
+                    GitHub
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                      viewBox="0 0 24 24" class="w-5 h-5">
+                      <path fill-rule="evenodd"
+                        d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.206 11.385.6.11.82-.26.82-.577v-2.254c-3.34.724-4.043-1.61-4.043-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.082-.73.082-.73 1.206.085 1.84 1.238 1.84 1.238 1.07 1.832 2.806 1.303 3.49.996.108-.775.42-1.303.763-1.603-2.665-.3-5.466-1.333-5.466-5.933 0-1.313.468-2.386 1.237-3.225-.124-.303-.536-1.523.118-3.176 0 0 1.01-.323 3.312 1.23a11.54 11.54 0 013.018-.404c1.024.004 2.056.137 3.018.404 2.302-1.553 3.31-1.23 3.31-1.23.656 1.653.244 2.873.12 3.176.77.84 1.236 1.912 1.236 3.225 0 4.61-2.804 5.63-5.476 5.926.43.37.814 1.1.814 2.22v3.293c0 .32.218.693.824.577C20.565 21.796 24 17.295 24 12c0-6.63-5.37-12-12-12z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        
+
+            <div
+              class="hidden mb-12 bg-gradient-to-b from-[#00172a] to-[#002a3d] rounded-lg shadow-lg project-item">
+              <div class="rounded-t-md shadow-md overflow-hidden">
+                <img src="dist/img/project/newproject3.png" alt="Project"
+                  class="w-full object-cover" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-xl text-white mt-5 mb-3">New
+                  Project 3</h3>
+                <p
+                  class="font-medium text-sm text-gray-300 leading-tight text-justify">
+                  Description for new project 3 goes here.
+                </p>
+                <div class="flex gap-4 mt-6">
+                  <a href="https://ramarfx.github.io/HotelIn/" target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out">
+                    View Project
+                  </a>
+                  <a href="https://github.com/ramarfx/HotelIn" target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -599,12 +641,15 @@
           <button id="load-more-btn"
             class="flex items-center gap-2 px-8 py-3 bg-blue-600 text-white font-semibold rounded-full hover:opacity-90 transition duration-300 ease-in-out mx-auto">
             Selanjutnya
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5l6 6m0 0l-6 6m6-6H4.5" />
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+              class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M13.5 4.5l6 6m0 0l-6 6m6-6H4.5" />
             </svg>
           </button>
         </div>
-        
+
       </div>
     </section>
 
@@ -748,7 +793,7 @@
                 d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
             </svg>
           </a>
-    
+
           <a
             href="https://m.facebook.com/profile.php/?id=100093475745512&name=xhp_nt_"
             target="_blank"
@@ -793,11 +838,19 @@
     }
   </script>
 
+    <script src="/dist/js/animation.js"></script>
+
     <!-- Portofolio End -->
     <!-- <div class="h-[200px]"></div> -->
     <script src="type.js"></script>
-    <script src="dist/js/script.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    
-
+    <script src="dist/js/script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   </body>
 </html>
