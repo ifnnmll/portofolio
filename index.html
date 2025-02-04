@@ -59,51 +59,60 @@
     <!-- Header End -->
 
     <!-- Section Start -->
-    <section id="home" class="pt-36">
-      <div class="container">
-        <div class="flex flex-wrap">
-          <div class="w-full self-center px-2 lg:w-1/2">
-            <div class="w-full h-full flex self-center">
-              <h1 id="typewriter" class="font-bold text-2xl lg:text-5xl"></h1>
-            </div>
-            <h2 class="font-medium text-lg text-slate-600 lg:text-2xl">
-              Web Developer
-            </h2>
-            <p class="font-medium mb-10 text-slate-600">
-              Menjadi Progremer Adalah Impian Saya Sejak Masih Di Bangku SMP
-            </p>
-            <a
-              href="#contact"
-              class="text-base font-semibold text-white bg-blue-500 py-3 px-8 rounded-md hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
-              Hubungi Saya
-            </a>
-
-          </div>
-          <div class="w-full self-end px-6 lg:w-1/2">
-            <div class="relative mt-10 lg:mt-9 lg:right-0">
-              <img
-                src="dist/img/pan.png"
-                alt="Muhammad Irfan Maulana"
-                class="max-w-full mx-auto" />
-              <span
-                class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-100">
-                <svg
-                  width="400"
-                  height="350"
-                  viewBox="0 0 200 200"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    fill="#14b8a6"
-                    d="M29.5,-55.1C40.3,-44.8,52.5,-41.1,62.3,-33C72.1,-24.9,79.5,-12.5,82.8,1.9C86.2,16.3,85.5,32.6,77.8,44.5C70.2,56.3,55.6,63.7,41.5,64.2C27.3,64.8,13.7,58.6,-0.6,59.6C-14.8,60.5,-29.6,68.7,-41.1,66.6C-52.5,64.5,-60.7,52.1,-65.6,39.3C-70.6,26.5,-72.3,13.2,-69.4,1.7C-66.5,-9.9,-58.9,-19.8,-54.9,-34.1C-50.8,-48.5,-50.3,-67.4,-41.7,-78.9C-33.2,-90.5,-16.6,-94.7,-3.6,-88.4C9.3,-82.1,18.7,-65.3,29.5,-55.1Z"
-                    transform="translate(100 100) scale(1.0)" />
-                </svg>
-              </span>
-            </div>
-          </div>
+<section id="home" class="pt-36">
+  <div class="container">
+    <div class="flex flex-wrap">
+      <div class="w-full self-center px-2 lg:w-1/2">
+        <div class="w-full h-full flex self-center">
+          <h1 id="typewriter" class="font-bold text-2xl lg:text-5xl opacity-0 translate-y-10"></h1>
+        </div>
+        <h2 id="role" class="font-medium text-lg text-slate-600 lg:text-2xl opacity-0 translate-y-10">
+          Web Developer
+        </h2>
+        <p id="description" class="font-medium mb-10 text-slate-600 opacity-0 translate-y-10">
+          Menjadi Progremer Adalah Impian Saya Sejak Masih Di Bangku SMP
+        </p>
+        <a id="contact-button"
+          href="#contact"
+          class="text-base font-semibold text-white bg-blue-500 py-3 px-8 rounded-md hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out opacity-0 translate-y-10">
+          Hubungi Saya
+        </a>
+      </div>
+      <div class="w-full self-end px-6 lg:w-1/2">
+        <div class="relative mt-10 lg:mt-9 lg:right-0">
+          <img id="profile-image"
+            src="dist/img/pan.png"
+            alt="Muhammad Irfan Maulana"
+            class="max-w-full mx-auto opacity-0 scale-90" />
+          <span
+            id="background-shape"
+            class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-100 opacity-0 scale-90">
+            <svg width="400" height="350" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#14b8a6"
+                d="M29.5,-55.1C40.3,-44.8,52.5,-41.1,62.3,-33C72.1,-24.9,79.5,-12.5,82.8,1.9C86.2,16.3,85.5,32.6,77.8,44.5C70.2,56.3,55.6,63.7,41.5,64.2C27.3,64.8,13.7,58.6,-0.6,59.6C-14.8,60.5,-29.6,68.7,-41.1,66.6C-52.5,64.5,-60.7,52.1,-65.6,39.3C-70.6,26.5,-72.3,13.2,-69.4,1.7C-66.5,-9.9,-58.9,-19.8,-54.9,-34.1C-50.8,-48.5,-50.3,-67.4,-41.7,-78.9C-33.2,-90.5,-16.6,-94.7,-3.6,-88.4C9.3,-82.1,18.7,-65.3,29.5,-55.1Z"
+                transform="translate(100 100) scale(1.0)" />
+            </svg>
+          </span>
         </div>
       </div>
-    </section>
-    <!-- Section End -->
+    </div>
+  </div>
+</section>
+<!-- Section End -->
+
+<!-- GSAP Animation -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    gsap.fromTo("#typewriter", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 1, delay: 0.3, ease: "power2.out" });
+    gsap.fromTo("#role", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 1, delay: 0.6, ease: "power2.out" });
+    gsap.fromTo("#description", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 1, delay: 0.9, ease: "power2.out" });
+    gsap.fromTo("#contact-button", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 1, delay: 1.2, ease: "power2.out" });
+
+    gsap.fromTo("#profile-image", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 1.2, delay: 1.5, ease: "power3.out" });
+    gsap.fromTo("#background-shape", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 1.2, delay: 1.8, ease: "power3.out" });
+  });
+</script>
+
 
     <!-- Header start -->
     <header
@@ -513,56 +522,60 @@
             </div>
             
 
-            <div
-            class="hidden mb-12 bg-gradient-to-b from-[#00172a] to-[#002a3d] rounded-lg shadow-lg project-item">
-            <div class="rounded-t-md shadow-md overflow-hidden">
-              <img src="dist/img/project/safeliveproject.png" alt="Project" class="w-full object-cover" />
-            </div>
-            <div class="p-4">
-              <h3 class="font-semibold text-xl text-white mt-5 mb-3">SaveLife</h3>
-              <p class="font-medium text-sm text-gray-300 leading-tight text-justify">
-                SaveLife adalah platform yang berkomitmen untuk meningkatkan kesadaran dan pengetahuan tentang pentingnya kesehatan fisik, mental, imunisasi, lingkungan, dan gizi seimbang. 
-              </p>
-              <div class="flex gap-4 mt-6">
-                <a href="https://safelife-lovat.vercel.app/" target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out">
-                  View Project
-                </a>
-                <a href="https://github.com/ifnnmll/web-sagasitas" target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out">
-                  GitHub
-                </a>
+            <div class="hidden mb-12 bg-gradient-to-b from-[#00172a] to-[#002a3d] rounded-lg shadow-lg project-item">
+              <div class="rounded-t-md shadow-md overflow-hidden">
+                <img src="dist/img/project/safeliveproject.png" alt="Project" class="w-full object-cover" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-xl text-white mt-5 mb-3">SaveLife</h3>
+                <p class="font-medium text-sm text-gray-300 leading-tight text-justify">
+                  SaveLife adalah platform yang berkomitmen untuk meningkatkan kesadaran dan pengetahuan tentang pentingnya kesehatan fisik, mental, imunisasi, lingkungan, dan gizi seimbang.
+                </p>
+                <div class="flex gap-4 mt-6">
+                  <a href="https://safelife-lovat.vercel.app/" target="_blank" rel="noopener noreferrer"
+                    class="text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out">
+                    View Project
+                  </a>
+                  <a href="https://github.com/ifnnmll/web-sagasitas" target="_blank" rel="noopener noreferrer"
+                    class="text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out flex items-center gap-2">
+                    GitHub
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
+                      <path fill-rule="evenodd"
+                        d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.206 11.385.6.11.82-.26.82-.577v-2.254c-3.34.724-4.043-1.61-4.043-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.082-.73.082-.73 1.206.085 1.84 1.238 1.84 1.238 1.07 1.832 2.806 1.303 3.49.996.108-.775.42-1.303.763-1.603-2.665-.3-5.466-1.333-5.466-5.933 0-1.313.468-2.386 1.237-3.225-.124-.303-.536-1.523.118-3.176 0 0 1.01-.323 3.312 1.23a11.54 11.54 0 013.018-.404c1.024.004 2.056.137 3.018.404 2.302-1.553 3.31-1.23 3.31-1.23.656 1.653.244 2.873.12 3.176.77.84 1.236 1.912 1.236 3.225 0 4.61-2.804 5.63-5.476 5.926.43.37.814 1.1.814 2.22v3.293c0 .32.218.693.824.577C20.565 21.796 24 17.295 24 12c0-6.63-5.37-12-12-12z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          
-          <div
-            class="hidden mb-12 bg-gradient-to-b from-[#00172a] to-[#002a3d] rounded-lg shadow-lg project-item">
-            <div class="rounded-t-md shadow-md overflow-hidden">
-              <img src="dist/img/project/PanFoodieproject.png" alt="Project" class="w-full object-cover" />
-            </div>
-            <div class="p-4">
-              <h3 class="font-semibold text-xl text-white mt-5 mb-3">PanFoodie</h3>
-              <p class="font-medium text-sm text-gray-300 leading-tight text-justify">
-                PanFoodie adalah web kasir modern untuk penjualan makanan dan minuman dengan sistem pembayaran online yang cepat dan aman. Dengan tampilan simpel dan responsif, memudahkan transaksi serta manajemen penjualan secara efisien.
-              </p>
-              <div class="flex gap-4 mt-6">
-                <a href="http://localhost:5173/" target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out">
-                  View Project
-                </a>
-                <a href="https://github.com/ifnnmll/kasirapp" target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out">
-                  GitHub
-                </a>
+            
+            <div class="hidden mb-12 bg-gradient-to-b from-[#00172a] to-[#002a3d] rounded-lg shadow-lg project-item">
+              <div class="rounded-t-md shadow-md overflow-hidden">
+                <img src="dist/img/project/PanFoodieproject.png" alt="Project" class="w-full object-cover" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-xl text-white mt-5 mb-3">PanFoodie</h3>
+                <p class="font-medium text-sm text-gray-300 leading-tight text-justify">
+                  PanFoodie adalah web kasir modern untuk penjualan makanan dan minuman dengan sistem pembayaran online yang cepat dan aman. Dengan tampilan simpel dan responsif, memudahkan transaksi serta manajemen penjualan secara efisien.
+                </p>
+                <div class="flex gap-4 mt-6">
+                  <a href="http://localhost:5173/" target="_blank" rel="noopener noreferrer"
+                    class="text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out">
+                    View Project
+                  </a>
+                  <a href="https://github.com/ifnnmll/kasirapp" target="_blank" rel="noopener noreferrer"
+                    class="text-base font-semibold text-white bg-blue-600 py-2 px-6 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out flex items-center gap-2">
+                    GitHub
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
+                      <path fill-rule="evenodd"
+                        d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.206 11.385.6.11.82-.26.82-.577v-2.254c-3.34.724-4.043-1.61-4.043-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.082-.73.082-.73 1.206.085 1.84 1.238 1.84 1.238 1.07 1.832 2.806 1.303 3.49.996.108-.775.42-1.303.763-1.603-2.665-.3-5.466-1.333-5.466-5.933 0-1.313.468-2.386 1.237-3.225-.124-.303-.536-1.523.118-3.176 0 0 1.01-.323 3.312 1.23a11.54 11.54 0 013.018-.404c1.024.004 2.056.137 3.018.404 2.302-1.553 3.31-1.23 3.31-1.23.656 1.653.244 2.873.12 3.176.77.84 1.236 1.912 1.236 3.225 0 4.61-2.804 5.63-5.476 5.926.43.37.814 1.1.814 2.22v3.293c0 .32.218.693.824.577C20.565 21.796 24 17.295 24 12c0-6.63-5.37-12-12-12z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          
+            
 
           <div
           class="hidden mb-12 bg-gradient-to-b from-[#00172a] to-[#002a3d] rounded-lg shadow-lg project-item">
@@ -794,5 +807,6 @@
     <!-- <div class="h-[200px]"></div> -->
     <script src="type.js"></script>
     <script src="dist/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   </body>
 </html>
