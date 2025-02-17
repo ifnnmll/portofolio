@@ -308,29 +308,36 @@
     </section>
     <!-- Skills End -->
 
-    <section id="3d-section" class="py-16" style="background: linear-gradient(135deg, #0B1120 0%, #1A2332 100%);">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-4 text-center text-white">3D Model Showcase</h2>
-        <p class="text-gray-200 text-center mb-8">
-          Berikut adalah model 3D yang dibuat menggunakan Blender dan diintegrasikan ke dalam proyek portofolio.
-        </p>
-        <div class="w-full max-w-4xl mx-auto">
-          <model-viewer 
-            src="mim.glb" 
-            auto-rotate 
-            camera-controls 
-            disable-zoom
-            ar 
-            class="w-full h-96 rounded-lg shadow-lg">
-          </model-viewer>
-        </div>
-      </div>
-    </section>
+
+    <section 
+    id="3d-section" 
+    class="bg-gradient-to-b from-[#1A2332] to-[#0B1120] py-16 flex flex-col items-center justify-center"
+  >
+    <!-- Judul -->
+    <h2 class="text-3xl font-bold mb-4 text-center text-white">
+      3D Model Showcase
+    </h2>
+    <!-- Deskripsi -->
+    <p class="text-gray-200 text-center mb-8">
+      Berikut adalah model 3D yang dibuat menggunakan Blender dan diintegrasikan ke dalam proyek portofolio.
+    </p>
+    
+    <!-- Model 3D (di luar container, langsung di section) -->
+    <model-viewer 
+      src="mim.glb" 
+      alt="Model 3D" 
+      auto-rotate 
+      camera-controls 
+      disable-zoom 
+      ar 
+      class="w-full max-w-4xl h-96"
+    ></model-viewer>
+  </section>
      
 
 <!-- Experience Start -->
     <section id="experience"
-      class="bg-gradient-to-b to-[#0B1120] from-[#1A2332] py-12">
+      class="bg-gradient-to-b to-[#1A2332] from-[#0B1120] py-12">
       <div class="container mx-auto px-6">
         <div class="text-center mb-10">
           <h2

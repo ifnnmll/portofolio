@@ -1141,6 +1141,14 @@ video {
   --tw-gradient-to: #1A2332 var(--tw-gradient-to-position);
 }
 
+.to-\[\] {
+  --tw-gradient-to:  var(--tw-gradient-to-position);
+}
+
+.to-\[1A2332\] {
+  --tw-gradient-to: 1A2332 var(--tw-gradient-to-position);
+}
+
 .fill-current {
   fill: currentColor;
 }
