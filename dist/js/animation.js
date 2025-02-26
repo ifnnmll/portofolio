@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     duration: 1,
     scrollTrigger: {
       trigger: "#about",
-      start: "top 80%", // Mulai animasi saat elemen 80% masuk viewport
+      start: "top 80%", 
       toggleActions: "play none none none",
     },
   });
@@ -168,10 +168,10 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
 
   const commonTriggerSettings = {
-    start: "top 90%", // Mulai animasi saat elemen hampir masuk viewport
-    toggleActions: "play none none reverse", // Action untuk animasi
-    once: true, // Hanya sekali animasi
-    invalidateOnRefresh: true, // Re-validate trigger jika halaman di-refresh
+    start: "top 90%", 
+    toggleActions: "play none none reverse", 
+    once: true, 
+    invalidateOnRefresh: true, 
   };
 
   // Animasi fade-in untuk judul dan deskripsi
@@ -191,15 +191,15 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.from(".project-item", {
     opacity: 0,
     y: -50,
-    scale: 0.95, // Tambahan biar efeknya lebih smooth
+    scale: 0.95, 
     duration: 1.2,
     ease: "power3.out",
-    stagger: 0.2, // Elemen muncul satu per satu dengan jeda
+    stagger: 0.2, 
     scrollTrigger: {
-      trigger: "#projects-container", // Pastikan ini sesuai dengan wadah proyek
-      start: "top 80%", // Mulai saat bagian atas container masuk viewport
-      toggleActions: "play none none none", // Animasi hanya jalan sekali
-      once: true, // Supaya tidak terulang saat di-scroll ke atas lagi
+      trigger: "#projects-container",
+      start: "top 80%", 
+      toggleActions: "play none none none", 
+      once: true,
     },
   });
 

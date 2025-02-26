@@ -43,12 +43,16 @@
                     class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Skills</a>
                 </li>
                 <li class="group">
-                  <a href="#project"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Project</a>
+                  <a href="#3d-section"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">3D Showcase</a>
                 </li>
                 <li class="group">
                   <a href="#experience"
                     class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Experience</a>
+                </li>
+                <li class="group">
+                  <a href="#project"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Project</a>
                 </li>
               </ul>
             </nav>
@@ -139,12 +143,16 @@
                     class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Skills</a>
                 </li>
                 <li class="group">
-                  <a href="#project"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Project</a>
+                  <a href="#3d-section"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">3D Showcase</a>
                 </li>
                 <li class="group">
                   <a href="#experience"
                     class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Experience</a>
+                </li>
+                <li class="group">
+                  <a href="#project"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Project</a>
                 </li>
               </ul>
             </nav>
@@ -206,8 +214,6 @@
       </div>
     </section>
     <!-- About end -->
-
-    
 
     <!-- Skills Start -->
     <section id="skills"
@@ -308,34 +314,32 @@
     </section>
     <!-- Skills End -->
 
+    <section
+  id="3d-section"
+  class="bg-gradient-to-b from-[#1A2332] to-[#0B1120] py-16 flex flex-col items-center justify-center"
+>
+  <h2 class="text-3xl font-bold mb-4 text-center text-white">
+    MIM 3D Showcase
+  </h2>
+  <!-- Deskripsi -->
+  <p class="text-gray-200 text-center mb-8">
+    Model 3D 'MIM' merepresentasikan inisial saya dan nama website ini. Dibuat dengan Blender dan diintegrasikan ke dalam portofolio.
+  </p>
 
-    <section 
-    id="3d-section" 
-    class="bg-gradient-to-b from-[#1A2332] to-[#0B1120] py-16 flex flex-col items-center justify-center"
-  >
-    <!-- Judul -->
-    <h2 class="text-3xl font-bold mb-4 text-center text-white">
-      3D Model Showcase
-    </h2>
-    <!-- Deskripsi -->
-    <p class="text-gray-200 text-center mb-8">
-      Berikut adalah model 3D yang dibuat menggunakan Blender dan diintegrasikan ke dalam proyek portofolio.
-    </p>
-    
-    <!-- Model 3D (di luar container, langsung di section) -->
-    <model-viewer 
-      src="mim.glb" 
-      alt="Model 3D" 
-      auto-rotate 
-      camera-controls 
-      disable-zoom 
-      ar 
-      class="w-full max-w-4xl h-96"
-    ></model-viewer>
-  </section>
-     
+  <model-viewer
+    src="mim.glb"
+    alt="Model 3D"
+    auto-rotate
+    camera-controls
+    disable-zoom
+    ar
+    class="w-full max-w-3xl h-72"
+  ></model-viewer>
+</section>
 
-<!-- Experience Start -->
+  
+
+    <!-- Experience Start -->
     <section id="experience"
       class="bg-gradient-to-b to-[#1A2332] from-[#0B1120] py-12">
       <div class="container mx-auto px-6">
@@ -360,34 +364,33 @@
         </div>
 
         <div id="experience-section" class="block text-center mb-10">
-          <h3 class="text-xl font-bold text-blue-500 mb-4 uppercase">Pengalaman</h3>
+          <h3
+            class="text-xl font-bold text-blue-500 mb-4 uppercase">Pengalaman</h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            
+
             <!-- Pengalaman 1 -->
             <div class="bg-[#1A2332] p-6 rounded-lg shadow-md">
-              <p class="text-sm text-gray-400 mb-2">September 2024 - November 2024</p>
+              <p class="text-sm text-gray-400 mb-2">September 2024 - November
+                2024</p>
               <h4 class="text-lg font-semibold text-white mb-2">Teknomadya</h4>
               <p class="text-gray-400 mb-4">Web Developer</p>
-              <img 
-                src="/dist/img/SERTIFIKAT PKL - Muhammad Irfan Maulana.jpg" 
-              
-                class="rounded-lg shadow-md w-full object-cover"
-              >
+              <img
+                src="/dist/img/SERTIFIKAT PKL - Muhammad Irfan Maulana.jpg"
+                class="rounded-lg shadow-md w-full object-cover">
             </div>
-        
+
             <!-- Pengalaman 2 -->
             <div class="bg-[#1A2332] p-6 rounded-lg shadow-md">
-              <p class="text-sm text-gray-400 mb-2">Januari 2025 - Maret 2025</p>
-              <h4 class="text-lg font-semibold text-white mb-2">Haekal Inti Pratama</h4>
+              <p class="text-sm text-gray-400 mb-2">Januari 2025 - Maret
+                2025</p>
+              <h4 class="text-lg font-semibold text-white mb-2">Haekal Inti
+                Pratama</h4>
               <p class="text-gray-400">Web Developer</p>
-              <img 
-              src="" 
-           
-            >
+              <img
+                src>
             </div>
           </div>
         </div>
-        
 
         <div id="education-section" class="hidden text-center mb-10">
           <h3
@@ -437,8 +440,6 @@
       </div>
     </section>
     <!-- Experience Section End -->
-
-    
 
     <!-- Section Project -->
     <section id="project" class="pt-24 pb-16 bg-slate-200">
@@ -710,47 +711,68 @@
     <!-- Hubungi Saya Start -->
     <section id="contact" class="bg-gray-900 text-white py-12 px-5 font-sans">
       <div class="container max-w-5xl mx-auto">
-        <h1 class="text-center text-2xl font-bold text-blue-500 mb-8">HUBUNGI SAYA</h1>
-        
+        <h1 class="text-center text-2xl font-bold text-blue-500 mb-8">HUBUNGI
+          SAYA</h1>
+
         <div class="flex flex-wrap gap-8 justify-between">
           <!-- Contact Info -->
           <div class="flex-1 min-w-[300px]">
             <div class="flex items-center gap-3 mb-4">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" class="w-8 h-8">
-              <a href="https://www.linkedin.com/in/muhammad-irfan-maulana-340956312" class="text-white text-lg hover:underline">Muhammad Irfan Maulana</a>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"
+                alt="LinkedIn" class="w-8 h-8">
+              <a
+                href="https://www.linkedin.com/in/muhammad-irfan-maulana-340956312"
+                class="text-white text-lg hover:underline">Muhammad Irfan
+                Maulana</a>
             </div>
             <div class="flex items-center gap-3 mb-4">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail" class="w-8 h-8">
-              <a href="mailto:muhammadirfanm.2006@gmail.com" class="text-white text-lg hover:underline">muhammadirfanm.2006@gmail.com</a>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png"
+                alt="Gmail" class="w-8 h-8">
+              <a href="mailto:muhammadirfanm.2006@gmail.com"
+                class="text-white text-lg hover:underline">muhammadirfanm.2006@gmail.com</a>
             </div>
             <div class="flex items-center gap-3">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="w-8 h-8">
-              <a href="https://www.instagram.com/_ifnnmll" class="text-white text-lg hover:underline">ifnnmll</a>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                alt="Instagram" class="w-8 h-8">
+              <a href="https://www.instagram.com/_ifnnmll"
+                class="text-white text-lg hover:underline">ifnnmll</a>
             </div>
           </div>
-          
+
           <!-- Contact Form -->
           <div class="flex-1 min-w-[300px]">
             <form>
               <div class="mb-4">
                 <label for="name" class="block text-sm mb-1">Nama</label>
-                <input type="text" id="name" name="name" placeholder="Input nama" class="w-full p-3 bg-gray-800 text-white border border-blue-500 rounded focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+                <input type="text" id="name" name="name"
+                  placeholder="Input nama"
+                  class="w-full p-3 bg-gray-800 text-white border border-blue-500 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  required>
               </div>
               <div class="mb-4">
                 <label for="email" class="block text-sm mb-1">Email</label>
-                <input type="email" id="email" name="email" placeholder="Input email" class="w-full p-3 bg-gray-800 text-white border border-blue-500 rounded focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+                <input type="email" id="email" name="email"
+                  placeholder="Input email"
+                  class="w-full p-3 bg-gray-800 text-white border border-blue-500 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  required>
               </div>
               <div class="mb-4">
                 <label for="message" class="block text-sm mb-1">Pesan</label>
-                <textarea id="message" name="message" placeholder="Input pesan" class="w-full p-3 h-32 bg-gray-800 text-white border border-blue-500 rounded focus:outline-none focus:ring-2 focus:ring-blue-400" required></textarea>
+                <textarea id="message" name="message" placeholder="Input pesan"
+                  class="w-full p-3 h-32 bg-gray-800 text-white border border-blue-500 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  required></textarea>
               </div>
-              <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded text-lg transition">Kirim</button>
+              <button type="submit"
+                class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded text-lg transition">Kirim</button>
             </form>
           </div>
         </div>
       </div>
     </section>
-    
+
     <!-- Hubungi Saya End -->
 
     <!-- Footer Start -->
@@ -815,12 +837,12 @@
     <!-- Footer End -->
 
     <button
-    id="toTopBtn"
-    onclick="scrollToTop()"
-    class="fixed bottom-4 right-4 w-10 h-10 bg-blue-500 text-white text-base font-bold shadow-md hover:bg-blue-700 flex items-center justify-center rounded-full">
-    ↑
-  </button>
-  
+      id="toTopBtn"
+      onclick="scrollToTop()"
+      class="fixed bottom-4 right-4 w-10 h-10 bg-blue-500 text-white text-base font-bold shadow-md hover:bg-blue-700 flex items-center justify-center rounded-full">
+      ↑
+    </button>
+
     <script>
     const toTopBtn = document.getElementById('toTopBtn');
     window.onscroll = function() {
@@ -835,20 +857,23 @@
     }
   </script>
 
-      <script src="/dist/js/animation.js"></script>
+    <script src="/dist/js/animation.js"></script>
 
     <!-- Portofolio End -->
     <!-- <div class="h-[200px]"></div> -->
     <script src="type.js"></script>
     <script src="dist/js/script.js"></script>
-    <script src="dist/js/3d.js" ></script>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="dist/js/3d.js"></script>
+    <script type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-      
+
   </body>
 </html>
